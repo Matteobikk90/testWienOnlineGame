@@ -4,20 +4,20 @@ table {
 }
 
 .squares {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 }
 
 .X {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
-	background-image: url("http://www.chipsandgames.com/images/products/detail/201bk.png");
+	background-image: url("http://orig13.deviantart.net/ed78/f/2011/001/9/e/rapid_vienna_3d_logo_animation_by_syndikata_np-d3675dh.gif");
 }
 
 .O {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
-	background-image: url("http://www.chipsandgames.com/images/products/detail/209rd.png");
+	background-image: url("http://orig01.deviantart.net/4ca1/f/2013/115/a/a/austria_wien_3d_logo_by_syndikata_np-d62yv4g.gif");
 }

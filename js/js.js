@@ -4,7 +4,8 @@ $(document).ready(function() {
 
    $(".squares").on('click', function(event){
 
-      alert("working");
+      // alert("working");
+      
       var squareSelected = $(this);
 
       if(squareSelected.hasClass("X") || squareSelected.hasClass("O")) {
