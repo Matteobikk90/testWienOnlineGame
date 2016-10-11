@@ -78,7 +78,16 @@ $(document).ready(function() {
 
 
    }
+
+
+   $("button").click(function() {
+	document.location.href="";
+
+});
  
 
 
 });
+
+
+

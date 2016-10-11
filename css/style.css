@@ -1,6 +1,7 @@
-table {
-    margin: 0 auto;
-    margin-top: 150px;
+#container {
+	margin: 0 auto;
+	position: relative;
+	width: 300px;
 }
 
 .squares {
@@ -21,3 +22,8 @@ table {
 	background-position: center;
 	background-image: url("../img/austria.gif");
 }
+
+button {
+    margin-left: 34%;
+}
+
