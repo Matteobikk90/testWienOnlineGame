@@ -27,12 +27,15 @@ $(document).ready(function() {
         	squareSelected.addClass("O");
         	if (checkIfPlayerWon('O')) {
         		alert('Congratulation! Player ' + player + ' has won!');
-        	}
+        	} else {
 
         	player = 1;
+
         }
 
       }
+
+  }
 
 
     });
@@ -40,39 +43,40 @@ $(document).ready(function() {
 
    function checkIfPlayerWon(symbol) {
 
-      if($('#1').hasClass(symbol) && $('#2').hasClass(symbol) && $('#3').hasClass(symbol)) {
+      if($('#sq1').hasClass(symbol) && $('#sq2').hasClass(symbol) && $('#sq3').hasClass(symbol)) {
         
         return true;
 
-      } else if ($('#4').hasClass(symbol) && $('#5').hasClass(symbol) && $('#6').hasClass(symbol)) {
+      } else if ($('#sq4').hasClass(symbol) && $('#sq5').hasClass(symbol) && $('#sq6').hasClass(symbol)) {
 
         return true;
 
-      } else if ($('#7').hasClass(symbol) && $('#8').hasClass(symbol) && $('#9').hasClass(symbol)) {
+      } else if ($('#sq7').hasClass(symbol) && $('#sq8').hasClass(symbol) && $('#sq9').hasClass(symbol)) {
 
         return true; 
 
-      } else if ($('#1').hasClass(symbol) && $('#5').hasClass(symbol) && $('#9').hasClass(symbol)) {
+      } else if ($('#sq1').hasClass(symbol) && $('#sq5').hasClass(symbol) && $('#sq9').hasClass(symbol)) {
 
         return true;
 
-      } else if ($('#3').hasClass(symbol) && $('#5').hasClass(symbol) && $('#7').hasClass(symbol)) {
+      } else if ($('#sq3').hasClass(symbol) && $('#sq5').hasClass(symbol) && $('#sq7').hasClass(symbol)) {
 
         return true;
 
-      } else if ($('#1').hasClass(symbol) && $('#4').hasClass(symbol) && $('#7').hasClass(symbol)) {
+      } else if ($('#sq1').hasClass(symbol) && $('#sq4').hasClass(symbol) && $('#sq7').hasClass(symbol)) {
 
         return true;
 
-      } else if ($('#2').hasClass(symbol) && $('#5').hasClass(symbol) && $('#8').hasClass(symbol)) {
+      } else if ($('#sq2').hasClass(symbol) && $('#sq5').hasClass(symbol) && $('#sq8').hasClass(symbol)) {
 
         return true;
 
-      } else if ($('#3').hasClass(symbol) && $('#6').hasClass(symbol) && $('#9').hasClass(symbol)) {
+      } else if ($('#sq3').hasClass(symbol) && $('#sq6').hasClass(symbol) && $('#sq9').hasClass(symbol)) {
 
       } else {
 
       	return false;
+
       }
 
 
@@ -83,7 +87,34 @@ $(document).ready(function() {
    $("button").click(function() {
 	document.location.href="";
 
+   });
+
+
+   soundManager.setup({
+   url: 'js/soundmanager/swf',
+   flashVersion: 9, 
+   onready: function() {
+   
+var playButton = $(".squares");
+ playButton.on("click" , function(event) {
+
+var mySound = soundManager.createSound({
+     "id": 'ballSnd',
+     "url" :"sounds/ball.mp3",
+
 });
+
+   mySound.play(); 
+
+})
+
+
+}
+
+});
+
+
+
  
 
 
