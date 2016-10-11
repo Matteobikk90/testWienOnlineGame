@@ -7,3 +7,17 @@ table {
 	width: 100px;
 	height: 100px;
 }
+
+.X {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("http://www.chipsandgames.com/images/products/detail/201bk.png");
+}
+
+.O {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("http://www.chipsandgames.com/images/products/detail/209rd.png");
+}
