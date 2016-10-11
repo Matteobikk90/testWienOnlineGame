@@ -1,31 +1,29 @@
 body {
-	background-image: url("http://www.allianz-stadion.at/wp-content/uploads/2015/07/vip-slider-3.jpg");
-	background-position: center;
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-family: 'Josefin Sans', sans-serif;
+    background-image: url("http://fcflames.com/wp-content/uploads/stadium1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 #container {
-	margin: 0 auto;
-	position: relative;
-	width: 300px;
-	margin-top: 8%;
+    margin: 150px auto auto auto;
+    position: relative;
+    width: 300px;
 }
 
 h1 {
-	color: white;
-	margin-top: 3%;
-	width: 100%;
-	text-align: center;
+    color: white;
+    margin-top: 3%;
+    text-align: center;
 }
 
 .squares {
 	width: 100px;
 	height: 100px;
-		background-color: white;
+	background-color: white;
 }
 
 .X {
@@ -54,7 +52,10 @@ button {
 #winner {
 	width: 300px;
 	font-size: 30px;
+	color: black;
 	text-align: center;
+	font-weight: bold;
+	background-color: white;
 }
 
 #sq1 {

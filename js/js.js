@@ -27,18 +27,19 @@ $(document).ready(function() {
         	squareSelected.addClass("O");
         	if (checkIfPlayerWon('O')) {
         		$('#winner').text('Austria Wien Wins');
+
         	} else {
 
         	player = 1;
 
+          }
+
         }
 
-      }
-
-  }
+    }
 
 
-    });
+});
 
 
    function checkIfPlayerWon(symbol) {
@@ -96,7 +97,6 @@ $(document).ready(function() {
    onready: function() {
    
 var playButton = $(".squares");
-var wins = 
 playButton.on("click" , function(event) {
 
 var mySound = soundManager.createSound({
