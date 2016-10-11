@@ -96,7 +96,8 @@ $(document).ready(function() {
    onready: function() {
    
 var playButton = $(".squares");
- playButton.on("click" , function(event) {
+var wins = 
+playButton.on("click" , function(event) {
 
 var mySound = soundManager.createSound({
      "id": 'ballSnd',
