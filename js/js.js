@@ -15,7 +15,7 @@ $(document).ready(function() {
       	if (player === 1) {
       		squareSelected.addClass("X");
       		if(checkIfPlayerWon('X')) {
-      			alert('Congratulation! Player ' + player + ' has won!');
+      			$('#winner').text('Rapid Wien Wins');
 
       		} else {
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
         } else {
         	squareSelected.addClass("O");
         	if (checkIfPlayerWon('O')) {
-        		alert('Congratulation! Player ' + player + ' has won!');
+        		$('#winner').text('Austria Wien Wins');
         	} else {
 
         	player = 1;

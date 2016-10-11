@@ -51,6 +51,12 @@ button {
     background-image: url("https://meetthealchemist.files.wordpress.com/2012/09/play-again-button.png");
 }
 
+#winner {
+	width: 300px;
+	font-size: 30px;
+	text-align: center;
+}
+
 #sq1 {
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
