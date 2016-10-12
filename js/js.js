@@ -41,6 +41,8 @@ $(document).ready(function() {
 
 });
 
+   // Check Combinations
+
 
    function checkIfPlayerWon(symbol) {
 
@@ -74,6 +76,8 @@ $(document).ready(function() {
 
       } else if ($('#sq3').hasClass(symbol) && $('#sq6').hasClass(symbol) && $('#sq9').hasClass(symbol)) {
 
+        return true;
+
       } else {
 
       	return false;
@@ -85,11 +89,16 @@ $(document).ready(function() {
    }
 
 
+   // Restart Button 
+
+
    $("button").click(function() {
 	document.location.href="";
 
    });
 
+
+   // Sound Manager
 
    soundManager.setup({
    url: 'js/soundmanager/swf',
